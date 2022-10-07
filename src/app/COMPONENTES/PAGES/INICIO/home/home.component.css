@@ -1,0 +1,67 @@
+#Figura1
+{
+    padding: 3%;
+    text-align: center;
+}
+
+#Figura1 img
+{
+    width: 140px;
+    height: 140px;
+}
+
+.Info
+{
+    display: block;
+    background-color: black;
+    color: white;
+}
+
+.Info img
+{
+    width: 250px;
+    height: 300px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#Info1 h3
+{
+    text-align: left;
+    margin-top: 5%;
+}
+
+#Info1 p
+{
+    text-align: justify;
+}
+
+#Info2 h3
+{
+    color: white;
+    text-align: right;
+    margin-top: 5%;
+}
+
+#Info2 p
+{
+    text-align: justify;
+}
+
+#parrafo1
+{
+    margin-top: 25px;
+}
+
+.Pie
+{
+    background-color: antiquewhite;
+    display: block;
+    margin-top: 4%;
+    margin-bottom: 5%;
+}
+
+#Contacto
+{
+    text-align: right;
+}

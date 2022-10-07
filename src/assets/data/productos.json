@@ -1,0 +1,22 @@
+[
+    {
+        "Tipo": "Crema",
+        "Precio": "180.00",
+        "Sabor": "Piñon Rosa"
+    },
+    {
+        "Tipo": "Crema",
+        "Precio": "180.00",
+        "Sabor": "Chocolate"
+    },
+    {
+        "Tipo": "Crema",
+        "Precio": "180.00",
+        "Sabor": "Mazapan"
+    },
+    {
+        "Tipo": "Crema",
+        "Precio": "180.00",
+        "Sabor": "Cafe"
+    }
+]
