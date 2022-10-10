@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ProductoService } from 'src/service/producto.service';
 
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css']
+  selector: 'app-acerca',
+  templateUrl: './acerca.component.html',
+  styleUrls: ['./acerca.component.css']
 })
-export class AboutComponent implements OnInit {
+export class AcercaComponent implements OnInit {
 
   ProductoList: any[] = [];
   constructor(private ProductoSvc: ProductoService) {
