@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductoService } from 'src/service/producto.service';
+import {ProductoService} from 'src/service/producto.service'
 
 @Component({
   selector: 'app-acerca',
@@ -8,12 +8,12 @@ import { ProductoService } from 'src/service/producto.service';
 })
 export class AcercaComponent implements OnInit {
 
-  ProductoList: any[] = [];
+  ProductoList: any[] = []
   constructor(private ProductoSvc: ProductoService) {
     this.ProductoSvc.getAll().subscribe((result:any)=>{
-      this.ProductoList = result;
+      this.ProductoList=result;
     })
-   }
+  }
 
   ngOnInit(): void {
   }

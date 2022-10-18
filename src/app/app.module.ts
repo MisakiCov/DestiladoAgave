@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from '../assets/ROUTES/app-routing.module';
+import { AppRoutingModule } from '../assets/routes/app-routing.module';
+import { HttpClientModule } from "@angular/common/http"
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './COMPONENTES/NAVBAR/navbar/navbar.component';
 import { HomeComponent } from './COMPONENTES/PAGES/INICIO/home/home.component';
@@ -18,7 +19,8 @@ import { AcercaComponent } from './COMPONENTES/PAGES/ACERCA/acerca/acerca.compon
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
