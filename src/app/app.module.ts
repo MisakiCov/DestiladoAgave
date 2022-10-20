@@ -14,8 +14,8 @@ import { AcercaComponent } from './COMPONENTES/PAGES/ACERCA/acerca/acerca.compon
     AppComponent,
     NavbarComponent,
     HomeComponent,
+    AcercaComponent,
     ContactoComponent,
-    AcercaComponent
   ],
   imports: [
     BrowserModule,
