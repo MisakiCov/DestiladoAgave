@@ -1,6 +1,6 @@
 <section class="container">
-    <div class="card mb-3 " style="max-width:fit-content">
-        <div class="row g-0" *ngFor="let item of ProductoList" style="border:black solid; margin: 1%; border-radius: 5px;">
+    <div class="card mb-3 " id="cards">
+        <div class="row g-0" *ngFor="let item of ProductoList" id="row1">
             <div class="col-md-4">
             <img src="../../../../../assets/img/data/{{item.Sabor}}.jpg" class="img-fluid rounded-start w-100 h-100" alt="{{item.Sabor}}">
             </div>
@@ -8,7 +8,7 @@
             <div class="card-body">
                 <h5 class="h2 card-title">{{item.Sabor}}</h5>
                 <p class="h5 card-text">{{item.Descripcion}}</p>
-                <a class="btn btn-primary" style="margin-top: 15%; margin-left: 80%;">Ordenar</a>
+                <a class="btn btn-primary" id="boton">Ordenar</a>
             </div>
             </div>
         </div>

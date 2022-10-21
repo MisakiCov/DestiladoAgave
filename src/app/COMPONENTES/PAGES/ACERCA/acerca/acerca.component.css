@@ -1,0 +1,14 @@
+#cards{
+    max-width: fit-content;
+}
+
+#row1{
+    border: black solid;
+    margin: 1%;
+    border-radius: 5px;
+}
+
+#boton{
+    margin-top: 15%;
+    margin-left: 80%;
+}
