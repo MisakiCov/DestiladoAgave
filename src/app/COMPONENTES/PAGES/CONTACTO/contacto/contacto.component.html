@@ -6,14 +6,38 @@
             <th scope="col">Nombre</th>
             <th scope="col">Telefono</th>
             <th scope="col">Correo</th>
+            <th scope="col"></th>
           </tr>
         </thead>
         <tbody>
           <tr *ngFor="let item of ContactoList">
-            <th scope="row">{{item.Nombre}}</th>
-            <td>{{item.Telefono}}</td>
-            <td>{{item.Correo}}</td>
+            <th scope="row">{{item.nombre}}</th>
+            <td>{{item.telefono}}</td>
+            <td>{{item.correo}}</td>
+            <td>
+              <div class="d-grid">
+                <button type="button" class="btn btn-outline-danger">Borrar</button>
+              </div>
+            </td>
           </tr>
         </tbody>
       </table>
 </section>
+
+<div class="container">
+  <form [formGroup]="contactForm">
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Contacto Nuevo</span>
+      </div>
+      <input formControlName="Nombre" type="text" class="form-control" placeholder="Nombre">
+      <input formControlName="Telefono" type="text" class="form-control" placeholder="Telefono">
+      <input formControlName="Correo" type="text" class="form-control" placeholder="Correo">
+    </div>
+    <section class="container">
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button (click)="Agregar()" class="btn btn-outline-primary mb-2">Agregar</button>
+      </div>
+    </section>
+  </form>
+</div>

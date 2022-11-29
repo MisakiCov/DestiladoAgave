@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ContactoService } from 'src/service/contacto.service'
+import { ContactoService } from 'src/service/contacto.service';
+import { FormGroup,FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-contacto',
@@ -8,14 +9,30 @@ import { ContactoService } from 'src/service/contacto.service'
 })
 export class ContactoComponent implements OnInit {
 
-  ContactoList: any[] = []
+  ContactoList = null;
+
+  contactForm = new FormGroup({
+    nombre: new FormControl(''),
+    telefono: new FormControl(''),
+    correo: new FormControl('')
+  });
   constructor(private ContactoSvc: ContactoService) {
-    this.ContactoSvc.getAll().subscribe((result:any)=>{
-      this.ContactoList=result;
-    })
   }
 
   ngOnInit(): void {
+    this.mostrarTodosContacto();
+    this.Agregar();
   }
 
+  mostrarTodosContacto(){
+    this.ContactoSvc.mostrarTodosContacto().subscribe((result: any) => this.ContactoList = result);
+    console.log(this.ContactoList);
+  }
+
+  Agregar(): void {
+    this.ContactoSvc.AgregarContactos(this.contactForm.value).subscribe(() => {
+      this.mostrarTodosContacto();
+      this.contactForm.reset();
+    })
+  }
 }
