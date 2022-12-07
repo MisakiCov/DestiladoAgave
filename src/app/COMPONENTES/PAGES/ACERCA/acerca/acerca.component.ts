@@ -30,10 +30,12 @@ export class AcercaComponent implements OnInit {
     console.log(this.ProductoList);
   }
 
+  /*
   AgregarProductos(): void {
     this.ProductoSvc.AgregarProducto(this.productForm.value).subscribe(() => {
       this.MostrarTodos();
       this.productForm.reset();
     })
   }
+  */
 }

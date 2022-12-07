@@ -16,7 +16,7 @@
             <td>{{item.correo}}</td>
             <td>
               <div class="d-grid">
-                <button type="button" class="btn btn-outline-danger">Borrar</button>
+                <button (click)="Eliminar(item.telefono)" type="button" class="btn btn-outline-danger">Borrar</button>
               </div>
             </td>
           </tr>
@@ -30,9 +30,9 @@
       <div class="input-group-prepend">
         <span class="input-group-text">Contacto Nuevo</span>
       </div>
-      <input formControlName="Nombre" type="text" class="form-control" placeholder="Nombre">
-      <input formControlName="Telefono" type="text" class="form-control" placeholder="Telefono">
-      <input formControlName="Correo" type="text" class="form-control" placeholder="Correo">
+      <input formControlName="nombre"  type="text" class="form-control" placeholder="Nombre">
+      <input formControlName="telefono" type="text" class="form-control" placeholder="Telefono">
+      <input formControlName="correo" type="text" class="form-control" placeholder="Correo">
     </div>
     <section class="container">
       <div class="d-grid gap-2 d-md-flex justify-content-md-end">
@@ -41,3 +41,4 @@
     </section>
   </form>
 </div>
+

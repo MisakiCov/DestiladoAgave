@@ -14,13 +14,11 @@ export class ContactoService{
         return this.http.get(`${this.url}getallcontactos.php`);
     }
 
-    EliminarContacto(telefono: string){
-        return this.http.get(`${this.url}deleteContactos.php?telefono=${telefono}`);
+    EliminarContacto(telefono: any){
+        return this.http.delete(`${this.url}deleteContactos.php/telefono=${telefono}`);
     }
 
     AgregarContactos(Contact: string){
         return this.http.post(`${this.url}postContactos.php`, JSON.stringify(Contact));
     }
-
-    
 }

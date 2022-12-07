@@ -7,21 +7,24 @@ import { FormGroup,FormControl } from '@angular/forms';
   templateUrl: 'contacto.component.html',
   styleUrls: ['./contacto.component.css']
 })
-export class ContactoComponent implements OnInit {
+export class ContactoComponent{
 
   ContactoList = null;
 
+  
   contactForm = new FormGroup({
     nombre: new FormControl(''),
     telefono: new FormControl(''),
     correo: new FormControl('')
   });
+
+
   constructor(private ContactoSvc: ContactoService) {
+
   }
 
   ngOnInit(): void {
     this.mostrarTodosContacto();
-    this.Agregar();
   }
 
   mostrarTodosContacto(){
@@ -29,10 +32,17 @@ export class ContactoComponent implements OnInit {
     console.log(this.ContactoList);
   }
 
+  Eliminar(telefono:any):void{
+      console.log(telefono);
+      this.ContactoSvc.EliminarContacto(telefono).subscribe(()=>{
+      this.mostrarTodosContacto();
+    })
+  }
+
   Agregar(): void {
     this.ContactoSvc.AgregarContactos(this.contactForm.value).subscribe(() => {
       this.mostrarTodosContacto();
-      this.contactForm.reset();
+      this.contactForm.reset('');
     })
   }
 }
