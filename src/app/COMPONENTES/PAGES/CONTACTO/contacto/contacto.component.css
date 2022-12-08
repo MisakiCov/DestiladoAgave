@@ -1,3 +1,10 @@
 #tabla{
     margin-top: 5%;
+    /* Agregar margen superior de 5% para
+    evitar la saturacion de contenido */
+}
+
+h1{
+    text-align: center;
+    /* Alineacion del titulo en el centro */
 }

@@ -1,16 +1,23 @@
 #Figura1
+/* Estilizacion del Figura
+para ajustar al centro */
 {
     padding: 3%;
     text-align: center;
+    
 }
 
 #Figura1 img
+/* Estilizacion de las imagenes
+para ajustar el tamaño */
 {
     width: 140px;
     height: 140px;
 }
 
 .Info
+/* Estilizacion de la seccion
+de informacion */
 {
     display: block;
     background-color: black;
@@ -18,6 +25,8 @@
 }
 
 .Info img
+/* Estilizacion de las imagenes
+en la seccion de informacion */
 {
     width: 250px;
     height: 300px;
@@ -26,17 +35,23 @@
 }
 
 #Info1 h3
+/* Estilizacion de los titulos
+en la seccion de informacion */
 {
     text-align: left;
     margin-top: 5%;
 }
 
 #Info1 p
+/* Estilizacion de los parrafos
+en la seccion de informacion */
 {
     text-align: justify;
 }
 
 #Info2 h3
+/* Estilizacion de los titulos 
+en la segunda seccion de informacion */
 {
     color: white;
     text-align: right;
@@ -44,16 +59,20 @@
 }
 
 #Info2 p
+/* Estilizacion de los parrafos
+en la segunda seccion de informacion */
 {
     text-align: justify;
 }
 
 #parrafo1
+/* Estilizacion del parrafo1 */
 {
     margin-top: 25px;
 }
 
 .Pie
+/* Estilizacion del pie de pagina */
 {
     background-color: antiquewhite;
     display: block;
@@ -62,6 +81,7 @@
 }
 
 #Contacto
+/* Estilizacion de la seccion de Redes */
 {
     text-align: right;
 }

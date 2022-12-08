@@ -1,14 +1,24 @@
-<section class="container">
-    <div class="card mb-3 " id="cards">
+<section class="container"> <!--Crear seccion para dar estilo con facilidad-->
+    <div class="card mb-3 " id="cards"> <!--Division especial para las cards-->
         <div class="row g-0" *ngFor="let item of ProductoList" id="row1">
+            <!--Extraer item de la lista de productos establecida en el TypeScript-->
             <div class="col-md-4">
-            <img src="../../../../../assets/img/data/{{item.sabor}}.jpg" class="img-fluid rounded-start w-100 h-100" alt="{{item.Sabor}}">
+            <img src="../../../../../assets/img/data/{{item.sabor}}.jpg" 
+            class="img-fluid rounded-start w-100 h-100" alt="{{item.Sabor}}">
+            <!--Colocar una imagen sacada de la carpeta, tomando como nombre
+            el valor "sabor" del elemento item extraido de la tabla-->
             </div>
             <div class="col-md-8">
             <div class="card-body">
                 <h5 class="h2 card-title">{{item.sabor}}</h5>
+                <!--Colocar un titulo sacando el valor "sabor" del elemento item
+                extraido de la tabla-->
                 <p class="h5 card-text">{{item.descripcion}}</p>
+                <!--Colocar una descripcion sacando el valor "descripcion" del
+                elemento item extraido de la tabla-->
                 <a class="btn btn-primary" id="boton">${{item.precio}}.00 MXN</a>
+                <!--Colocar un precio sacado el valor "precio" del elemento
+                item extraido de la tabla-->
             </div>
             </div>
         </div>

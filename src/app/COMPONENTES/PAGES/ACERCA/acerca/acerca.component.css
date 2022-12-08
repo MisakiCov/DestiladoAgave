@@ -1,14 +1,22 @@
 #cards{
     max-width: fit-content;
+    /* Ajustar tamaño de las cards al contenido */
 }
 
 #row1{
     border: black solid;
+    /* Colocar un borde oscuro a cada card */
     margin: 1%;
+    /* Colocar un margen de 1% en cada card */
     border-radius: 5px;
+    /* Colocar un borde redondeado de 5px */
 }
 
 #boton{
     margin-top: 15%;
+    /* Colocar un margen superior al boton de 15% */
     margin-left: 80%;
+    /* Colocar un margen izquierdo al boton de 80% */
+    /* Esto con la finalidad de colocarlo a la izquierda 
+    del todo en las cards */
 }

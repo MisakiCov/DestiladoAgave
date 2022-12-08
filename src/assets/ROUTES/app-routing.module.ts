@@ -5,9 +5,12 @@ import { ContactoComponent } from 'src/app/COMPONENTES/PAGES/CONTACTO/contacto/c
 import { AcercaComponent } from 'src/app/COMPONENTES/PAGES/ACERCA/acerca/acerca.component'
 
 const routes: Routes = [
-  {path: 'Acerca', component: AcercaComponent},
+  {path: 'Acerca', component: AcercaComponent}, 
+  // Hacer que la direccion "Acerca" redirija a AcercaComponent
   {path: 'Inicio', component: HomeComponent},
+  // Hacer que la direccion "Inicio" redirika a HomeComponent
   {path: 'Contacto', component: ContactoComponent},
+  // Hacer que la direccion "Contacto" redirija a ContactoComponent
 ];
 
 @NgModule({
